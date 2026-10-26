@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="14dp">
+
+    <TextView
+        style="@style/Label"
+        android:layout_marginTop="4dp"
+        android:text="ADD TO MNEMO" />
+
+    <LinearLayout
+        android:id="@+id/rowFile"
+        style="@style/SheetRow">
+        <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_file" />
+        <TextView style="@style/SheetText" android:text="Add files  (PDF, image, JSON, ZIP, TXT)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowNote"
+        style="@style/SheetRow">
+        <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_note" />
+        <TextView style="@style/SheetText" android:text="Write a quick note" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/Label"
+        android:text="MODES" />
+
+    <LinearLayout
+        android:id="@+id/rowWeb"
+        style="@style/SheetRow">
+        <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_globe" />
+        <TextView style="@style/SheetText" android:text="Web search" />
+        <androidx.appcompat.widget.SwitchCompat android:id="@+id/swWeb" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowUltra"
+        style="@style/SheetRow">
+        <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_bolt" />
+        <TextView style="@style/SheetText" android:text="Ultra thinking" />
+        <androidx.appcompat.widget.SwitchCompat android:id="@+id/swUltra" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
