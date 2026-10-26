@@ -36,7 +36,7 @@ import io.noties.markwon.AbstractMarkwonPlugin;
 import io.noties.markwon.Markwon;
 import io.noties.markwon.core.MarkwonTheme;
 import io.noties.markwon.ext.strikethrough.StrikethroughPlugin;
-import io.noties.markwon.ext.tables.TablesPlugin;
+import io.noties.markwon.ext.tables.TablePlugin;
 import io.noties.markwon.ext.tasklist.TaskListPlugin;
 import io.noties.markwon.html.HtmlPlugin;
 import io.noties.markwon.linkify.LinkifyPlugin;
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
         accent = Prefs.accent(this);
         markwon = Markwon.builder(this)
                 .usePlugin(StrikethroughPlugin.create())
-                .usePlugin(TablesPlugin.create(this))
+                .usePlugin(TablePlugin.create(this))
                 .usePlugin(TaskListPlugin.create(this))
                 .usePlugin(HtmlPlugin.create())
                 .usePlugin(LinkifyPlugin.create())
